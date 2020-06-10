@@ -2,11 +2,14 @@
 //
 
 #include "stdafx.h"
-#include <iostream>
+#include "Message.h"
 
 int main()
 {
-	std::cout << "Test VS2105 on WIN 10 pro" << std::endl;
-    return 0;
+	Message * m = new Message(L"Hello world");
+	m->show();
+	delete m;
+
+	return 0;
 }
 
